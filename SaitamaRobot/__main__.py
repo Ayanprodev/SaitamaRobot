@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {Eren Yeager bot}! 
+Hi sir {}, my name is {Eren Yeager bot}! 
 I am an Anime themed group management bot.
 Help me to grow my Eldian Empire, I specialize in managing anime themed groups.
 You can find my list of available commands with /help.
