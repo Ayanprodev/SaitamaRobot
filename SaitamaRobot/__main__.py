@@ -73,15 +73,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
+Hi {}, my name is {Eren Yeager bot}! 
 I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
+Help me to grow my Eldian Empire, I specialize in managing anime themed groups.
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
+Hey there! My name is *{Eren Yeager bot}*.
+I'm The Founding Titan nd help Eldians manage their groups with my powers. Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -212,7 +212,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                SAITAMA_IMG,
+                Eren Yeager_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 ),
@@ -222,8 +222,8 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Saitama to your group",
-                                url="t.me/{}?startgroup=true".format(
+                                text="☑️ Add Eren Yeager to your group",
+                                url="t.me/{Eren_Yeager_AttackTitan_bot}?startgroup=true".format(
                                     context.bot.username
                                 ),
                             )
@@ -231,17 +231,19 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="🚑 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                url=f"https:/hindisubanimes/t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
                                 text="🔔 Updates Channel",
-                                url="https://t.me/OnePunchUpdates",
+                                url="https:/hindisubanimes/t.me/HSA help centre",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🧾 Getting started guide",
-                                url="https://t.me/OnePunchUpdates/29",
+                                url="https://t.me/hindisubanimes/29
+                            
+
                             )
                         ],
                         [
@@ -255,7 +257,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "I'm awake!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -373,7 +375,7 @@ def get_help(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Help",
-                                url="t.me/{}?start=ghelp_{}".format(
+                                url="t.me/{Eren_Yeager_AttackTitan_bot}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
                             )
@@ -389,7 +391,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/{}?start=help".format(context.bot.username),
+                            url="t.me/{Eren_Yeager_AttackTitan_bot}?start=help".format(context.bot.username),
                         )
                     ]
                 ]
@@ -559,7 +561,7 @@ def get_settings(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Settings",
-                                url="t.me/{}?start=stngs_{}".format(
+                                url="t.me/{Eren_Yeager_AttackTitan_bot}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
                             )
@@ -584,7 +586,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1392872370 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
